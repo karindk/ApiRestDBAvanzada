@@ -26,7 +26,7 @@ router.route('/producto/:sku')
 				if(resultado.deletedCount == 0){
 					res.status(404).send('[?] Producto no encontrado')
 				}else{
-					res.status(200).json(resultado)
+					res.status(202).json(resultado)
 				}
 			})
 	})
