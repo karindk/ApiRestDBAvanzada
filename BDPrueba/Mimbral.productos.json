@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "648fc18ee2f22dc5ea0dc85e"
+  },
+  "nombreProducto": "Destornillador",
+  "stock": 18,
+  "precio": 6990,
+  "categoria": "Herramientas Manuales",
+  "SKU": "001001012",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "648fc1d8b684f5ba6cf946d8"
+  },
+  "nombreProducto": "Cemento Polpaico",
+  "stock": 20,
+  "precio": 3610,
+  "categoria": "Materiales de Construcción",
+  "SKU": "001001016",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64945ada800134aa783bca7a"
+  },
+  "nombreProducto": "Pernos",
+  "stock": 300,
+  "precio": 590,
+  "categoria": "Fijaciones",
+  "SKU": "001001013",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64945afb800134aa783bca7c"
+  },
+  "nombreProducto": "Martillo",
+  "stock": 40,
+  "precio": 3990,
+  "categoria": "Herramientas Manuales",
+  "SKU": "001001014",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64945b3e800134aa783bca7f"
+  },
+  "nombreProducto": "Codo tubería",
+  "stock": 10,
+  "precio": 250,
+  "categoria": "Fitting",
+  "SKU": "001001011",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64945b65800134aa783bca81"
+  },
+  "nombreProducto": "Monster",
+  "stock": 10,
+  "precio": 1700,
+  "categoria": "Alimentos",
+  "SKU": "001001015",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64945b8f800134aa783bca83"
+  },
+  "nombreProducto": "Destornillador Eléctrico",
+  "stock": 10,
+  "precio": 24990,
+  "categoria": "Herramientas Eléctricas",
+  "SKU": "001001017",
+  "__v": 0
+}]

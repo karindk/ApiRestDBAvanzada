@@ -11,7 +11,7 @@ router.route('/producto/:sku')
 		Productos.find({ SKU: req.params.sku })
 			.then(resultado => {
 				if(resultado === []){
-					res.status(404).send('[?] Producto no encontrado')
+					res.status(204).send('[?] Producto no encontrado')
 				}else{
 					res.status(200).json(resultado)
 				}
@@ -24,7 +24,7 @@ router.route('/producto/:sku')
 		Productos.deleteOne({ SKU: req.params.sku })
 			.then(resultado => {
 				if(resultado.deletedCount == 0){
-					res.status(404).send('[?] Producto no encontrado')
+					res.status(204).send('[?] Producto no encontrado')
 				}else{
 					res.status(202).json(resultado)
 				}
@@ -34,9 +34,9 @@ router.route('/producto/:sku')
 		Productos.updateOne({ SKU: req.params.sku }, req.body)
 			.then(resultado => {
 				if(resultado.matchedCount == 0){
-					res.status(404).send('[?] Producto no encontrado')
+					res.status(204).send('[?] Producto no encontrado')
 				}else{
-					res.status(200).json(resultado)
+					res.status(201).json(resultado)
 				}
 			}).catch(err => {
 				console.log(err)
@@ -47,7 +47,7 @@ router.route('/producto/:sku')
 		Productos.updateOne({SKU: req.params.sku},{ $set:{ stock: req.body.stock}})
 			.then(resultado => {
 				if(resultado.matchedCount == 0){
-					res.status(404).send('[?] Producto no encontrado')
+					res.status(204).send('[?] Producto no encontrado')
 				}else{
 					res.status(200).json(resultado)
 				}
